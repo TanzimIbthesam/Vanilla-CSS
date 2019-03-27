@@ -1,0 +1,252 @@
+ body{
+    /* margin:0;
+    padding:0; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    line-height: 1.5;
+    margin: 0;
+    padding:0;
+    background: #f4f4f4;
+
+
+}
+ul{
+    margin:0;
+    padding:0;
+}
+
+ .container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}  
+/* Header */
+header{
+    background-color:black;
+    color:white;
+    opacity: 0.8; 
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom:orange 3px solid;
+}
+header a{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:16px;
+}
+ 
+header li{
+float:left;
+display:inline;
+padding:0 20px 0 20px;
+
+}
+header #brands{
+    float:left;
+}
+header #brands h2{
+  margin:0;
+}
+header nav{
+    float:right;
+    margin-top:10px;
+  
+}
+header .highlight,header .current a{
+color:brown;
+font-weight: bold;
+opacity: 0.8;
+}
+header a:hover{
+    color:#cccccc;
+    font-weight: bold;
+}
+.webdesignpart{
+  
+    min-height: 400px;
+    background: url('./img/webdesign.jpg');
+    background-repeat: no-repeat  ;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    
+
+}
+.webdesignpart h1{
+    margin-top: 100px;
+    font-size:55px;
+    margin-bottom: 10px;
+}
+.webdesinpart p{
+    font-size:20px;
+    
+}
+.newsletter {
+padding: 15px;
+background: #35424a;
+
+}
+.newsletter h1{
+    color:white;
+    font-size: 30px;
+    float:left;
+}
+.newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+.newsletter input[type="email"]{
+    padding: 4px;
+    width: 250px;
+    height: 25px;
+}
+.newsletter button{
+    height:38px;
+    background:orangered;
+    border:0;
+    color:white;
+    padding:0 20px 0 20px;
+}
+.boxes{
+    
+    padding: 20px;
+    float: left;
+    /* margin: 20px; */
+}
+.row{
+    width:30%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+
+}
+.row img{
+    width: 90px;
+}
+footer{
+    width:100%;
+    background-color:orangered;
+    text-align: center;
+    min-height: 50px;
+    font-size:20px;
+    color:white;
+    opacity: 0.89;
+    padding: 20px;
+     margin-top: 20px;
+    /* padding-top: 20px; */
+}
+.footerwidth{
+    width: 100%;
+    
+}
+.sidebar{
+    width:30%;
+    float:right;
+    margin-top: 20px;
+    font-style: italic;
+    font-size:16px;
+}
+.articleone{
+    width: 65%;
+    float:left;
+}
+.dark{
+    background-color: black;
+    color:white;
+    height:350px;
+    padding:15px;
+}
+.light{
+    background-color:orangered;
+    color:white;
+    height:200px;
+    padding:15px;
+    font-style: italic;
+    font-size:16px;
+   
+}
+ ul.services li{
+    height:200px;
+    background-color: grey;
+    border:1px solid #cccccc;
+    margin-bottom: 5px;
+    text-align: center;
+    opacity:0.65;
+    padding: 20px;
+
+}
+.sidebar input[type="text"]{
+    width:430px;
+    height: 30px;
+   
+}
+.sidebar input[type="email"]{
+    width:430px;
+    height: 30px;
+   
+}
+.sidebar button{
+    height:38px;
+    background:orangered;
+    border:0;
+    color:white;
+    padding:0 20px 0 20px;
+}
+/* media queries */
+@media(max-width:768px){
+    header.brands,
+    header nav,
+    header nav li,
+    .newsletter h1,
+    .newsletter form,
+    .row
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+
+    }
+    .webdesignpart h1{
+        margin-top:40px;
+    }
+    .newsletter button{
+        display: block;
+        width: 100%;
+
+    }
+    .newsletter form input[type="email"]{
+        width:100%;
+        margin-bottom: 5px;
+
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    footer p{
+       padding-right: 40px;
+        margin-top:-7px; 
+       font-size:18px;
+    }
+    header nav ul li a{
+     padding-right:26px; 
+     /* margin-right: 25px; */
+     
+    }
+    .articleone{
+        float: none;
+        width:100%;
+    }
+    .sidebar{
+       float:none;
+       width:100%;
+    }
+    .light{
+        height:540px;
+    }
+    .dark{
+        height:400px;
+        font-size: 16px;
+        padding-left: 2px; 
+    }
+}
